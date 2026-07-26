@@ -1,8 +1,25 @@
 aid: distributedspectrum
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/distributedspectrum.png
 name: Distributedspectrum
-description: Distributedspectrum is a company surfaced as a portfolio company of felicis and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'Distributed Spectrum, self-described as "The World''s First AI Signals Expert," builds edge-AI
+  radio-frequency sensing technology that detects and identifies RF signals to autonomously map threats
+  without expensive hardware or trained operators. Its sensors process data locally to deliver real-time
+  alerts on threat types such as tactical radios, GPS jammers, and drones, and can be deployed anywhere
+  using commercial components to form distributed detection networks. The company is headquartered at 99
+  Madison Ave, New York, NY, raised a $25M Series A, and is a Felicis portfolio company. No public API
+  or developer program is published at this time; this profile carries the identity and domain-security
+  posture surfaced by the enrichment pipeline.'
 url: https://raw.githubusercontent.com/api-evangelist/distributedspectrum/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Radio Frequency
+- Signals Intelligence
+- Threat Detection
+- Edge AI
+- Sensors
+- Defense
+- National Security
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/distributedspectrum-domain-security.yml
 - type: Website
   url: https://distributedspectrum.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
